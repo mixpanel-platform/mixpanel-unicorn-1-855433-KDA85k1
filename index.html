@@ -39,7 +39,6 @@
             surveyID: survey_id
           };
           var script = $('#cq').html();
-          script = script.replace(/REPLACE_WITH_SURVEY_ID/g, queryParams);
           script = $.trim(script);
           MP.api.custom_query(script, queryParams)
           .done(function(resp) {
